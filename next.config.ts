@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // API Routes需要关闭静态导出
+  // output: 'export',
 };
 
 export default nextConfig;

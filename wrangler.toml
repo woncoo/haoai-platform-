@@ -1,0 +1,30 @@
+# Cloudflare Pages 部署配置
+# 使用 wrangler 部署到 Cloudflare Pages
+
+name = "haoai-platform"
+compatibility_date = "2024-01-01"
+
+# Pages 项目配置
+pages_build_output_dir = ".next"
+
+# Cloudflare Pages 环境变量（在 Cloudflare Pages 设置中配置）
+# API_KEY_ENCRYPTION_KEY - API加密密钥（生产环境必须设置）
+# NODE_VERSION = "18"
+# NEXT_PUBLIC_SITE_URL - 网站URL
+
+# KV 命名空间（如果需要缓存）
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-namespace-id"
+
+# D1 数据库（如果使用）
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "haoai"
+# database_id = "your-d1-database-id"
+
+# 部署命令：
+# 1. npm run build
+# 2. npx wrangler pages deploy .next
+#
+# 或者使用 Git 集成在 Cloudflare Pages 控制台部署
